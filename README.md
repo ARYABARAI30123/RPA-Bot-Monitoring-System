@@ -25,6 +25,13 @@ A comprehensive dashboard for monitoring, analyzing, and managing RPA (Robotic P
 - Scikit-learn for ML models
 - SQLAlchemy for database
 
+## 📊 Architecture
+
+### System Architecture
+
+<img width="1002" height="890" alt="Screenshot 2025-11-06 085756" src="https://github.com/user-attachments/assets/a2119577-b031-4be9-a037-2cbb95c0475d" />
+
+
 ## 📸 Dashboard Screenshots & Detailed Explanations
 
 ### 1. Overview Dashboard
@@ -315,13 +322,7 @@ If you encounter any issues:
 4. Push to the branch
 5. Create a Pull Request
 
-For detailed contribution guidelines, see CONTRIBUTING.md
 
-## 📊 Architecture
-
-### System Architecture
-
-<img width="1002" height="890" alt="Screenshot 2025-11-06 085756" src="https://github.com/user-attachments/assets/a2119577-b031-4be9-a037-2cbb95c0475d" />
 
 ### Data Flow
 1. Bot execution data collection
