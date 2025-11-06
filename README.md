@@ -323,6 +323,188 @@ If you encounter any issues:
 5. Create a Pull Request
 
 For detailed contribution guidelines, see CONTRIBUTING.md
-=======
-[Rest of the README content remains the same...]
->>>>>>> 79b941abf8db96ef6ba425a278e3da571a5c3aa7
+
+## 📊 Architecture
+
+### System Architecture
+```
++------------------+     +-----------------+     +------------------+
+|    Frontend      |     |     Backend     |     |    Database      |
+|  React + Vite    |<--->|  Flask + ML     |<--->|    SQLite       |
+|  Material-UI     |     |  Random Forest  |     |                  |
++------------------+     +-----------------+     +------------------+
+```
+
+### Data Flow
+1. Bot execution data collection
+2. Real-time metrics processing
+3. ML model risk assessment
+4. Dashboard visualization
+
+## 🔒 Security
+
+### Authentication
+- JWT-based authentication
+- Role-based access control
+- Session management
+
+### Data Protection
+- HTTPS encryption
+- Database encryption
+- Input validation
+- XSS protection
+
+## 📈 Machine Learning Pipeline
+
+### Data Processing
+1. Feature engineering
+2. Data normalization
+3. Outlier detection
+
+### Model Training
+- Random Forest classifier
+- Cross-validation
+- Hyperparameter tuning
+
+### Risk Assessment
+- Real-time prediction
+- Confidence scoring
+- Model retraining schedule
+
+## 🔄 API Documentation
+
+### Authentication Endpoints
+```
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/refresh
+```
+
+### Analytics Endpoints
+```
+GET /api/analytics/dashboard
+GET /api/analytics/user/{user_id}
+GET /api/analytics/bot/{bot_id}
+```
+
+### Bot Management
+```
+GET /api/bots
+POST /api/bots/create
+PUT /api/bots/{bot_id}
+DELETE /api/bots/{bot_id}
+```
+
+## 📱 Responsive Design
+
+The dashboard is fully responsive and works on:
+- Desktop (1920×1080 and above)
+- Laptop (1366×768)
+- Tablet (768×1024)
+- Mobile (375×667)
+
+## 🎯 Performance Optimization
+
+### Frontend
+- Code splitting
+- Lazy loading
+- Image optimization
+- Caching strategies
+
+### Backend
+- Database indexing
+- Query optimization
+- Response caching
+- Connection pooling
+
+## 📆 Release History
+
+### Version 1.0.0 (Current)
+- Initial release
+- Core monitoring features
+- Basic ML integration
+
+### Future Releases
+- Advanced anomaly detection
+- Custom bot scripting
+- Integration with CI/CD
+- Mobile app support
+
+## 🔍 Monitoring & Logging
+
+### Application Logs
+- Backend: `/backend/logs/app.log`
+- Frontend: Browser console
+- Database: `/backend/logs/db.log`
+
+### Metrics Collection
+- Response times
+- Error rates
+- Resource usage
+- User activity
+
+## 💡 Best Practices
+
+### Code Style
+- PEP 8 for Python
+- Airbnb style for JavaScript
+- Conventional commits
+
+### Development Workflow
+1. Create feature branch
+2. Write tests
+3. Implement feature
+4. Code review
+5. Merge to main
+
+## 📚 Related Documentation
+
+- [Flask Documentation](https://flask.palletsprojects.com/)
+- [React Documentation](https://reactjs.org/)
+- [Material-UI Components](https://mui.com/)
+- [Recharts API](https://recharts.org/)
+
+## 🤝 Support & Community
+
+- [Report Issues](https://github.com/ARYABARAI30123/RPA-Bot-Monitoring-System/issues)
+- [Feature Requests](https://github.com/ARYABARAI30123/RPA-Bot-Monitoring-System/issues/new)
+- [Discussions](https://github.com/ARYABARAI30123/RPA-Bot-Monitoring-System/discussions)
+
+## 📝 Changelog
+
+### [1.0.0] - 2025-11-06
+- Initial release
+- Core dashboard features
+- ML risk assessment
+- Real-time monitoring
+
+## 🎓 Tutorial & Examples
+
+### Basic Usage
+```python
+# Example bot monitoring setup
+from rpa_monitor import BotMonitor
+
+monitor = BotMonitor()
+monitor.track_execution(bot_id="bot123")
+```
+
+### Advanced Configuration
+```python
+# Custom risk assessment
+monitor.configure_risk_assessment(
+    threshold=0.75,
+    factors=["execution_time", "error_rate"]
+)
+```
+
+## 🌟 Acknowledgments
+
+- scikit-learn team for ML tools
+- Material-UI for components
+- Flask team for the backend framework
+- Open source community
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
